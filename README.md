@@ -4,6 +4,8 @@
 
 2.List of ETFs https://docs.google.com/spreadsheets/d/1XO4pIg8YBDohYh1dGS6i-L4l9qaMz4FBnJGfcTb_zew/edit?usp=sharing
 
+3. The Free Udemy Course explaining this https://www.udemy.com/course/stock-market-color-lamp-in-python/
+
 
 
 ## Setting up yo Light
