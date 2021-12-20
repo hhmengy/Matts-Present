@@ -36,7 +36,11 @@
     
     -STOCK_TICKER is used to determine which ticker you want the light to reflect(set IS_ETF to false)
     
+                - use the list of stocks file to see all valid stocks, you can copy/paste the ticker name 
+    
     -ETF_TICKER is used to determine which ETF you want the light to reflect(set IS_ETF to true)
+    
+                - use the list of ETFs file to see all valid ETFs, you can copy/paste the ETF name 
     
     -IS_ETF set to true if you want the light to reflect the ETF_TICKER you defined. Set to false if you want the light to reflect the STOCK_TICKER
 
