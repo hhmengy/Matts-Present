@@ -28,6 +28,8 @@
 
 3.Turn the light on and Run the code(make sure you download the one python file in this repository)
         
+        -Make sure you have python3 installed
+        
         -If you use an IDE like geany you can run it through that.
         
         -If not, go to your command prompt and change directories to where you saved the  code. Then type the command python3 stock_bulb.py
