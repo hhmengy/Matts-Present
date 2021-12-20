@@ -58,4 +58,6 @@
    
    -I don’t think it would be too hard to figure out how to do that, I can help with that if needed.
 
-4. If you want to set up the code to follow multiple stocks or track something else instead of profit and loss, just let me know and I can make those changes.  
+4. If you want to set up the code to follow multiple stocks or track something else instead of profit and loss, just let me know and I can make those changes.
+
+5. Lines 25-29 are where the colors are set. If you want different colors just change the hex values(#ff1100) to the corresponding colors you want.
