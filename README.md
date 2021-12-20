@@ -12,7 +12,7 @@
         
         -It has you download an app called “Mi Home App”. I ended up downloading an app called “Yeelight”. The app has instructions on how to set up the light.
         
-        -Once the light is connected, find the IP address for it on your yeelight app
+2. Once the light is connected, find the IP address for it on your yeelight app
         
         -Click the bulb on your app
         
