@@ -36,6 +36,8 @@
         
         -If not, go to your command prompt and change directories to where you saved the  code. Then type the command: python3 stock_bulb.py
 
+4. Your command prompt should be displaying messages about if the bulb is connected, if the market is open, if the code has been put to sleep and so on. If the market is open, your bulb should turn some shade of green or red depending on how the market is doing.
+
 ## Editing the Code
 
 1. The three variables in lines 11-13
