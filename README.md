@@ -28,7 +28,7 @@
         
         -If you use an IDE like geany you can run it through that.
         
-        -If not, go to your command prompt and change directories to where you saved the  code. Then type the command python3 stock_bulb.py\
+        -If not, go to your command prompt and change directories to where you saved the  code. Then type the command python3 stock_bulb.py
 
 ## Editing the Code
 
