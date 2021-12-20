@@ -30,9 +30,11 @@
         
         -Make sure you have python3 installed
         
+        -Once python3 is installed, you may need to install the dependencies from lines 1-8. To do so, just run the command: pip install library_name
+        
         -If you use an IDE like geany you can run it through that.
         
-        -If not, go to your command prompt and change directories to where you saved the  code. Then type the command python3 stock_bulb.py
+        -If not, go to your command prompt and change directories to where you saved the  code. Then type the command: python3 stock_bulb.py
 
 ## Editing the Code
 
