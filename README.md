@@ -26,7 +26,7 @@
 
 2.Assign your bulb’s IP to the BULB_IP variable in the code on line 10
 
-3.Turn the light on and Run the code
+3.Turn the light on and Run the code(make sure you download the one python file in this repository)
         
         -If you use an IDE like geany you can run it through that.
         
