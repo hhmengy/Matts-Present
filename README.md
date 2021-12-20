@@ -25,8 +25,11 @@ If not, go to your command prompt and change directories to where you saved the 
 ## Editing the Code
 
 1. The three variables in lines 11-13
+    
     -STOCK_TICKER is used to determine which ticker you want the light to reflect(set IS_ETF to false)
+    
     -ETF_TICKER is used to determine which ETF you want the light to reflect(set IS_ETF to true)
+    
     -IS_ETF set to true if you want the light to reflect the ETF_TICKER you defined. Set to false if you want the light to reflect the STOCK_TICKER
 2.If you want to understand the code better, I followed the free Udemy course located here. https://www.udemy.com/course/stock-market-color-lamp-in-python/
 3.I was going to put the code on the Raspberry pi to run constantly without having to worry about having to start up the code every time you turn on a computer, but the micro SD card got corrupted when I was setting it up :(
