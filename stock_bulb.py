@@ -8,13 +8,17 @@ import numpy as np
 from yeelight import Bulb, BulbException
 
 BULB_IP = '192.168.0.9'
-STOCK_TICKER = 'SPDR S&P 500'
-ETF_TICKER = 'spy'
+STOCK_TICKER = 'AAPL'         #Stock uses tickers
+ETF_TICKER = 'SPDR S&P 500'   #ETF uses names
 IS_ETF = True
 
-def daily_pnl(stock):
-    stock_data = investpy.etfs.get_etf_historical_data(stock, 'united states', from_date=(date.today() +
-        timedelta(days=-1)).strftime("%d/%m/%Y"), to_date=date.today().strftime("%d/%m/%Y"))
+def daily_pnl():
+    if IS_ETF:
+	    stock_data = investpy.etfs.get_etf_historical_data(ETF_TICKER, 'united states', from_date=(date.today() +
+            timedelta(days=-1)).strftime("%d/%m/%Y"), to_date=date.today().strftime("%d/%m/%Y"))
+    else:
+	    stock_data = investpy.get_stock_historical_data(STOCK_TICKER, 'united states', from_date=(date.today() +
+            timedelta(days=-1)).strftime("%d/%m/%Y"), to_date=date.today().strftime("%d/%m/%Y"))           
     stock_data.index = stock_data.index + timedelta(days=1)
     ytd = stock_data.iloc[0].Close
     tdy = stock_data.iloc[1].Close
@@ -28,7 +32,7 @@ def refresh_bulb_color(bulb):
                     0.5: '#00ff73',
                     1.0: '#00ff00',}  # >+0.5% gain
 
-    pnl = daily_pnl(STOCK_TICKER)
+    pnl = daily_pnl()
     print("{:.2f}%".format(pnl))
     pnl_idx = np.searchsorted(list(pnl_to_color.keys()), pnl, 'left').clip(0,4)
     color = list(pnl_to_color.values())[pnl_idx]
@@ -45,13 +49,12 @@ def refresh_bulb_color(bulb):
 def isInvestLiveToday(is_new_day):
     if is_new_day:
         # Latest date available on Invest.com
-        stock_data = investpy.etfs.get_etf_historical_data(STOCK_TICKER, 'united states', from_date=(date.today() +
+        stock_data = investpy.get_stock_historical_data('AAPL', 'united states', from_date=(date.today() +
                                                                                            timedelta(days=-1)).strftime(
             "%d/%m/%Y"), to_date=date.today().strftime("%d/%m/%Y"))
         stock_data.index = stock_data.index + timedelta(days=1)
         latest = stock_data.iloc[1].Close
         is_new_day = False
-        logging.info(investpy.etfs.get_etfs(country='united states'))
 
         return (stock_data.index[0].date() == date.today())
     else:
