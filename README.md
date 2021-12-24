@@ -54,9 +54,6 @@
 
 2. If you want to understand the code better, I followed the free Udemy course located here. https://www.udemy.com/course/stock-market-color-lamp-in-python/
 
-3. I was going to put the code on the Raspberry pi to run constantly without having to worry about having to start up the code every time you turn on a computer, but the micro SD card got corrupted when I was setting it up :(
-   
-   -I don’t think it would be too hard to figure out how to do that, I can help with that if needed.
 
 4. If you want to set up the code to follow multiple stocks or track something else instead of profit and loss, just let me know and I can make those changes.
 
